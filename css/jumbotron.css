@@ -1,0 +1,22 @@
+.jumbotron {
+  background: url(../assets/coffee.jpg) fixed;
+  background-size: cover;
+  height: 50vh;
+  color: var(--egg);
+  z-index: 1;
+}
+.jumbo-container {
+  padding-top: 25%;
+}
+
+.jumbo-header {
+  font-family: var(--font-one);
+  font-size: 75px;
+}
+.jumbo-para {
+  margin-top: 25px;
+  padding: 130px;
+  font-size: 80px;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+}

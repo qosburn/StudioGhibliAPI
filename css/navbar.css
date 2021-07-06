@@ -1,0 +1,15 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  /* overflow: hidden;
+ 
+  z-index: 10;*/
+}
+.navbar-nav {
+  margin-left: 100px;
+}
+nav a {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}

@@ -1,0 +1,9 @@
+body {
+  background-color: var(--egg);
+}
+
+.card-title {
+  text-align: center;
+  font-family: var(--font-one);
+  font-size: 30px;
+}
