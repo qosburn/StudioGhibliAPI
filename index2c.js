@@ -3,7 +3,8 @@ const baseURL = 'https://ghibliapi.herokuapp.com/films/';
 let movContainer = document.querySelector('.mov-info');
 
 document.getElementById('btnFetch').addEventListener('click', fetchPeeps);
-
+//////
+///////START Modal script
 var exampleModal = document.getElementById('exampleModal');
 exampleModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
@@ -20,6 +21,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   modalTitle.textContent = 'New message to ' + recipient;
   modalBodyInput.value = recipient;
 });
+///End Modal script
 
 function fetchPeeps(e) {
   e.preventDefault();
@@ -58,7 +60,21 @@ function displayImage(films) {
     a.target = '_blank';
     // a.setAttribute('target', '_blank'); -- both set attribute and target works
 
-    a.className = 'btn btn-primary';
+    var butIon = document.createElement('button');
+    butIon.innerHTML = 'make this dynamic';
+    butIon.setAttribute('data-bs-whatever', '@getbootstrap');
+    movE.appendChild(butIon);
+
+    // this is buiding a button
+    /* button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      data-bs-whatever="@getbootstrap"
+    >
+      Open modal for @getbootstrap
+    </button> */
 
     movTitle.innerText = `Movie title: ${films[i].title} `;
     movDescript.innerText = `Movie description: ${films[i].description}`;
