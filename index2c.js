@@ -38,17 +38,24 @@ function displayImage(films) {
   for (let i = 0; i < films.length; i++) {
     let movE = document.createElement('div');
     movE.className = 'card';
-    let movTitle = document.createElement('h5');
-    movTitle.className = 'card-title';
-    let movDescript = document.createElement('p');
-    movDescript.className = 'card-text';
     let movImg = document.createElement('img');
     movImg.className = 'card-img-top';
     let movPoster = document.createElement('img');
     movPoster.className = 'card-img-top2';
-    let movDirector = document.createElement('p');
+    let movEbody = document.createElement('div');
+    movEbody.className = 'card-body';
+    let movTitle = document.createElement('h5');
+    movTitle.className = 'card-title';
+    let movDescript = document.createElement('p');
+    movDescript.className = 'card-text';
+    let movDirectorLable = document.createElement('p');
+    movDirectorLable.className = 'directRLab';
+    let movDirector = document.createElement('span');
     movDirector.className = 'directR';
-    let movRdate = document.createElement('p');
+
+    let movRdateLab = document.createElement('p');
+    movRdateLab.className = 'releaseDateLab';
+    let movRdate = document.createElement('span');
     movRdate.className = 'releaseDate';
 
     //this is the added a -- check on add LINK
@@ -60,7 +67,7 @@ function displayImage(films) {
     a.target = '_blank';
     // a.setAttribute('target', '_blank'); -- both set attribute and target works
 
-    var butIon = document.createElement('button');
+    let butIon = document.createElement('button');
     butIon.innerHTML = 'make this dynamic';
     butIon.setAttribute('data-bs-whatever', '@getbootstrap');
     movE.appendChild(butIon);
@@ -78,8 +85,11 @@ function displayImage(films) {
 
     movTitle.innerText = `Movie title: ${films[i].title} `;
     movDescript.innerText = `Movie description: ${films[i].description}`;
-    movDirector.innerText = `${films[i].director}`;
-    movRdate.innerText = `${films[i].release_date}`;
+    movDirectorLable.innerText = `Director: `;
+    movDirector.innerText = ` ${films[i].director}`;
+
+    movRdateLab.innerText = `Release Date: `;
+    movRdate.innerText = ` ${films[i].release_date}`;
     movImg.src = personUrl(
       films[i].title.replaceAll(' ', '').toLowerCase().replace("'", '')
     );
@@ -92,11 +102,14 @@ function displayImage(films) {
     movContainer.appendChild(movE);
     movE.appendChild(movImg);
     movE.appendChild(movPoster);
-    movE.appendChild(movTitle);
-    movE.appendChild(movDescript);
-    movE.appendChild(movDirector);
-    movE.appendChild(movRdate);
-    movE.appendChild(a);
+    movE.appendChild(movEbody);
+    movEbody.appendChild(movTitle);
+    movEbody.appendChild(movDescript);
+    movEbody.appendChild(movDirectorLable);
+    movDirectorLable.appendChild(movDirector);
+    movEbody.appendChild(movRdateLab);
+    movRdateLab.appendChild(movRdate);
+    movEbody.appendChild(a);
   }
 }
 
@@ -185,7 +198,11 @@ possible load modal answer - https://getbootstrap.com/docs/4.0/components/modal/
 
 
 
-  Website resources: https://translate.google.com/translate?hl=en&sl=ja&u=https://www.ghibli.jp/works/mimi/&prev=search&pto=aue
+  Website resources: 
+  
+  https://translate.google.com/translate?hl=en&sl=ja&u=https://www.ghibli.jp/works/mimi/&prev=search&pto=aue
+
+  https://www.ghibli-museum.jp/exhibition/009956/
 
 
 

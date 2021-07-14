@@ -1,15 +1,42 @@
 body {
-  background-color: var(--egg);
+  background-color: var(--white);
 }
 
 .card-title {
   text-align: center;
-  font-family: var(--font-Title);
+  font-family: var(--font-Primary);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 35px;
 }
 .card-text {
   margin: 10px;
-  font-family: var(--font-Title);
+  font-family: var(--font-Primary);
+  font-weight: 300;
+  font-size: 30px;
+}
+.directRLab {
+  font-family: var(--font-Primary);
   font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+.directR {
+  /* margin: 10px; */
+  font-family: var(--font-Primary);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+}
+.releaseDateLab {
+  font-family: var(--font-Primary);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+.releaseDate {
+  /* margin: 10px; */
+  font-family: var(--font-Primary);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
 }
