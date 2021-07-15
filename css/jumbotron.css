@@ -1,10 +1,14 @@
-.jumbotron {
-  background: url(../assets/coffee.jpg) fixed;
+/* .logoIcon {
+  background: url(../assets/myTotoroSmile.jpg);
+  background-position: center;
   background-size: cover;
+
   height: 50vh;
+
   color: var(--egg);
   z-index: 1;
-}
+  background-repeat: no-repeat;
+} */
 .jumbo-container {
   padding-top: 25%;
 }

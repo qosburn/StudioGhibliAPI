@@ -2,6 +2,48 @@ body {
   background-color: var(--white);
 }
 
+.container {
+  background-image: url(../assets/myTotoroSmile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logoIcon {
+  /* background-image: url(../assets/myTotoroSmile.jpg); */
+  position: relative;
+  height: 500px;
+  /* margin-top: 30px; */
+}
+
+.topIcon {
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  /* right: 40; */
+
+  height: 200px;
+  text-align: center;
+}
+.bottomIcon {
+  padding: 225px 0px 0px 60px;
+  /* position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  text-align: center; */
+}
+.intro {
+  margin-top: -65px;
+  padding: 30px 30px 30px 40px;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: var(--font-Primary);
+  letter-spacing: 1px;
+  color: var(--black);
+}
+
 .card-title {
   text-align: center;
   font-family: var(--font-Primary);
@@ -9,10 +51,12 @@ body {
   font-size: 35px;
 }
 .card-text {
-  margin: 10px;
+  /* margin: 10px; */
   font-family: var(--font-Primary);
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 5px 5px 5px 5px;
 }
 .directRLab {
   font-family: var(--font-Primary);
@@ -39,4 +83,10 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
+}
+
+h1 {
+  font-family: var(--font-Primary);
+  font-weight: 600;
+  font-size: 70px;
 }

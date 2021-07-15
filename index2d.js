@@ -1,7 +1,7 @@
 const baseURL = 'https://ghibliapi.herokuapp.com/films/';
 
 // let movContainer = document.querySelector('.mov-info');
-let movContainer = document.querySelector('.row row-cols-1 row-cols-md-3 g-4');
+let movContainer = document.querySelector('.row');
 
 //document.getElementById('btnFetch').addEventListener('click', fetchPeeps);
 //////
@@ -24,12 +24,14 @@ function displayImage(films) {
   console.log(films[3].director);
 
   for (let i = 0; i < films.length; i++) {
+    let movEcol = document.createElement('div');
+    movEcol.className = 'col';
     let movE = document.createElement('div');
     movE.className = 'card';
     let movImg = document.createElement('img');
-    movImg.className = 'card-img-top';
+    // movImg.className = 'card-img-top';
     let movPoster = document.createElement('img');
-    movPoster.className = 'card-img-top2';
+    movPoster.className = 'card-img-top';
     let movEbody = document.createElement('div');
     movEbody.className = 'card-body';
     let movTitle = document.createElement('h5');
@@ -55,13 +57,13 @@ function displayImage(films) {
     a.target = '_blank';
     // a.setAttribute('target', '_blank'); -- both set attribute and target works
 
-    let butIon = document.createElement('button');
-    butIon.innerHTML = 'make this dynamic';
-    butIon.setAttribute('data-bs-whatever', '@getbootstrap');
-    movE.appendChild(butIon);
+    // let butIon = document.createElement('button');
+    // butIon.innerHTML = 'make this dynamic';
+    // butIon.setAttribute('data-bs-whatever', '@getbootstrap');
+    // movE.appendChild(butIon);
 
-    movTitle.innerText = `Movie title: ${films[i].title} `;
-    movDescript.innerText = `Movie description: ${films[i].description}`;
+    movTitle.innerText = `${films[i].title} `;
+    movDescript.innerText = `${films[i].description}`;
     movDirectorLable.innerText = `Director: `;
     movDirector.innerText = ` ${films[i].director}`;
 
@@ -76,8 +78,9 @@ function displayImage(films) {
 
     a.href = movImg.src;
 
-    movContainer.appendChild(movE);
-    movE.appendChild(movImg);
+    movContainer.appendChild(movEcol);
+    // movE.appendChild(movImg);
+    movEcol.appendChild(movE);
     movE.appendChild(movPoster);
     movE.appendChild(movEbody);
     movEbody.appendChild(movTitle);

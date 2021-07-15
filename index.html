@@ -13,107 +13,48 @@
       crossorigin="anonymous"
     />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Close Fonts -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="container">
-      <div class="intro">
-        <p>Studio GHIBLI is</p>
-        <p>
-          21 fantastic films from Studio GHIBLI known for artisic -- beautiful
-          illistrations ..such nice .. get your free desktop artwork
-        </p>
-        <span><button onclick="" id="btnFetch">Click to Refetch</button></span>
+      <div class="logoIcon">
+        <div class="topIcon">
+          <img src="./assets/StudioGhiblilogo.png" alt="" width="200" />
+        </div>
+        <div class="bottomIcon">
+          <img src="./assets/totoro_Base.png" alt="" width="350" />
+        </div>
       </div>
-      <div class="mov-info"></div>
+      <div class="intro">
+        <h1>Studio GHIBLI</h1>
+        <p>
+          Studio Ghibli is a Japanese animation film studio headquartered in
+          Koganei, Tokyo. The studio is best known for its carefully crafted
+          animated feature films. In total they have produced the 21 fantastic
+          films. Below find all the featured films along with a free artwork for
+          your desktop.
+        </p>
+        <!-- Removed Button and only on load now. <span><button onclick="" id="btnFetch">Click to load the films</button></span> -->
+      </div>
+      <!-- <div class="mov-info" ></div> -->
+      <div class="row row-cols-1 row-cols-md-3 g-4"></div>
 
       <!-- Button trigger modal -->
-      <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-      data-bs-whatever="@mdo"
-    >
-      Open modal for @mdo
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-      data-bs-whatever="@fat"
-    >
-      Open modal for @fat
-    </button><button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-      data-bs-whatever="@getbootstrap"
-    >
-      Open modal for @getbootstrap
-    </button>
-
 
       <!-- Modal -->
-      
-    <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label"
-                >Recipient:</label
-              >
-              <input type="text" class="form-control" id="recipient-name" />
-            </div>
-            <div class="mb-3">
-              <label for="message-text" class="col-form-label"
-                >Message:</label
-              >
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Send message</button>
-        </div>
-      </div>
     </div>
-  </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="./index2c.js"></script>
+    <script src="./index2d.js"></script>
   </body>
 </html>
