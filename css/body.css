@@ -3,9 +3,11 @@ body {
 }
 
 .container {
-  background-image: url(../assets/myTotoroSmile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('../assets/myTotoroSmile.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .logoIcon {
